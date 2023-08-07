@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Models;
-using WebApi.Repositories;
+using Repositories.EfCore;
 
 namespace WebApi.Controllers
 {
@@ -117,6 +118,27 @@ namespace WebApi.Controllers
 
                 throw new Exception(ex.Message);
             }
+        }
+        [HttpPatch("{id:int}")]
+        public IActionResult PartiallyUpdateBook([FromRoute(Name = "id")] int id,
+           [FromBody] JsonPatchDocument<Book> bookPatch)
+        {
+            try
+            {
+                var entity = _context.Books.Where(x => x.Id.Equals(id)).SingleOrDefault();
+                if (entity == null)
+                    return NotFound();
+                bookPatch.ApplyTo(entity);
+                _context.SaveChanges();
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+
         }
 
     }
