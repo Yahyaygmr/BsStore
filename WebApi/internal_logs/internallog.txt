@@ -150,3 +150,17 @@
 2023-08-12 15:00:49.7795 Info Configuration initialized.
 2023-08-12 15:22:08.1956 Info AppDomain Shutting down. LogFactory closing...
 2023-08-12 15:22:08.2155 Info LogFactory has been closed.
+2023-08-13 20:33:45.2966 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-13 20:33:45.3550 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-13 20:33:45.3695 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\YAHYA\Desktop\BTk\BsStore\WebApi\nlog.config
+2023-08-13 20:33:45.3695 Info Configuration initialized.
+2023-08-13 20:38:48.5816 Info AppDomain Shutting down. LogFactory closing...
+2023-08-13 20:38:48.6067 Info LogFactory has been closed.
+2023-08-13 21:10:06.8117 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-13 21:10:06.8376 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-13 21:10:06.8528 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\YAHYA\Desktop\BTk\BsStore\WebApi\nlog.config
+2023-08-13 21:10:06.8528 Info Configuration initialized.
+2023-08-13 21:21:50.3127 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-13 21:21:50.3410 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-13 21:21:50.3535 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\YAHYA\Desktop\BTk\BsStore\WebApi\nlog.config
+2023-08-13 21:21:50.3535 Info Configuration initialized.
