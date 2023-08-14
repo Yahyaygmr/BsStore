@@ -36,10 +36,11 @@ namespace Repositories.EfCore.Extensions
 
                 orderQueryBuilder.Append($"{objectProperty.Name.ToString()} {direction},");
 
-                var orderQuery = orderQueryBuilder.ToString().TrimEnd(',', ' ');
-
-                return orderQuery;
             }
+
+            var orderQuery = orderQueryBuilder.ToString().TrimEnd(',', ' ');
+
+            return orderQuery;
         }
     }
 }
