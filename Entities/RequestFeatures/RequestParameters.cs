@@ -19,10 +19,7 @@ namespace Entities.RequestFeatures
         }
         public string? OrderBy { get; set; }
 
-        public RequestParameters()
-        {
-            OrderBy = "id";
-        }
+        public string? Fields { get; set; }
 
     }
 }
