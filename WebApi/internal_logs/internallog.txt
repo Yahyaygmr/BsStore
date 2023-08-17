@@ -212,3 +212,17 @@
 2023-08-15 13:37:45.8863 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
 2023-08-15 13:37:45.9063 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\YAHYA\Desktop\BTk\BsStore\WebApi\nlog.config
 2023-08-15 13:37:45.9208 Info Configuration initialized.
+2023-08-15 15:47:55.6149 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-15 15:47:55.6629 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-15 15:47:55.6743 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\YAHYA\Desktop\BTk\BsStore\WebApi\nlog.config
+2023-08-15 15:47:55.6838 Info Configuration initialized.
+2023-08-17 16:14:10.8016 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-17 16:14:10.8499 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-17 16:14:10.8640 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\YAHYA\Desktop\BTk\BsStore\WebApi\nlog.config
+2023-08-17 16:14:10.8640 Info Configuration initialized.
+2023-08-17 16:15:58.1214 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-17 16:15:58.1467 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-17 16:15:58.1628 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\YAHYA\Desktop\BTk\BsStore\WebApi\nlog.config
+2023-08-17 16:15:58.1771 Info Configuration initialized.
+2023-08-17 16:16:04.6611 Info AppDomain Shutting down. LogFactory closing...
+2023-08-17 16:16:04.6779 Info LogFactory has been closed.
