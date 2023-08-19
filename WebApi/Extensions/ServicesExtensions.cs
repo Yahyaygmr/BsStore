@@ -117,5 +117,10 @@ namespace WebApi.Extensions
             services.AddResponseCaching();
         }
 
+        public static void ConfigureHttpCacheHeaders(this IServiceCollection services)
+        {
+            services.AddHttpCacheHeaders();
+        }
+
     }
 }
