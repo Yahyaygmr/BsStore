@@ -12,6 +12,7 @@ using Services;
 using Services.Contracts;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Presentation.Controllers;
+using AspNetCoreRateLimit;
 
 namespace WebApi.Extensions
 {
@@ -122,5 +123,27 @@ namespace WebApi.Extensions
             services.AddHttpCacheHeaders();
         }
 
+        public static void RateLimitingOptions(this IServiceCollection services)
+        {
+            var rateLimitRules = new List<RateLimitRule>()
+            { new RateLimitRule()
+                {
+                     Endpoint = "*",
+                    Limit = 3,
+                    Period = "1m"
+                }
+
+            };
+
+            services.Configure<IpRateLimitOptions>(opt =>
+            {
+                opt.GeneralRules = rateLimitRules;
+            });
+
+            services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+            services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+            services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+        }
     }
 }
